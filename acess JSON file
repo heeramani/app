@@ -1,0 +1,14 @@
+const app = require("express")();
+app.listen(3000);
+app.on("/json", (req, res) => {
+  res.sendFile("./filename.json");
+});
+Then, input these in a command prompt:
+
+1. npm init
+(then put in the values)
+
+2. npm i express
+
+3. node server.js
+And that should let you access the file from anywhere on the web while your computer is running. Just go to https://[youripaddress]:3000/json
